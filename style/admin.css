@@ -1,0 +1,192 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,form,p,ul,dl,dd,dt,li,ol{
+    margin:0;
+    padding:0;
+}
+body{
+    font-size: 12px;
+    background: #fff;
+}
+#top{
+    background: url(../images/admin_top_bg.gif);
+}
+#top h1{
+    width:150px;
+    height:80px;
+    font-size: 12px;
+    background: url(../images/logosmall.png) no-repeat;
+    text-indent: -9999px;
+    float:left;
+}
+#top ul{
+    padding-top: 47px;
+    float:left;
+    padding-left:10px;
+}
+#top ul li{
+    float:left;
+    list-style: none;
+    padding-right:5px;
+}
+#top ul li a{
+    width: 58px;
+    height:33px;
+    font-size: 14px;
+    font-weight: bolder;
+    text-decoration: none;
+    color:#fff;
+    text-align: center;
+    line-height:33px;
+    display:block;
+    background: orange;
+    background:url(../images/li_bg.png)no-repeat left bottom;
+}
+#top ul li a.selected{
+    color:#999;
+    background-position: right bottom;
+}
+#top p{
+    color:#fff;
+    float:right;
+    padding-right:20px;
+    padding-top: 33px;
+}
+#top p a{
+    color: #fff;
+    color: #fff;
+    text-decoration: none;
+}
+#sidebar{
+    background: #f7fbfc url(../images/sidebar_right.png) repeat-y right;
+}
+#sidebar dl{
+    padding:20px;
+    text-indent: 10px;
+}
+#sidebar dl dt {
+    font-size:14px;
+    color: #3b6ea5;
+    font-weight: bolder;
+    border-bottom:1px solid #ccc;
+    padding: 5px 0;
+    margin:5px 0;
+}
+#sidebar dl dd {
+    height: 22px;
+    line-height: 22px;
+}
+#sidebar dl dd a{
+    text-decoration: none;
+    color:#333;
+}
+
+#sidebar dl dd a:hover{
+    text-decoration: underline;
+}
+#main{
+
+}
+#main div.map{
+    padding:15px;
+    color:#ccc;
+}
+#main table{
+    width:95%;
+    margin:0 auto;
+    text-align: center;
+}
+#main table th,#main table td{
+    height:30px;
+    line-height: 30px;
+    color:#333;
+}
+#main table tr{
+    background: #fff;
+}
+#main table th{
+    background: #eef3f7;
+    border-bottom:1px solid #d5dfe8;
+    font-weight: normal;
+}
+#main table td{
+    border-bottom:1px solid #eee;
+}
+#main table tr:hover{
+    border-bottom:1px solid #eee;
+    background: #ffffcc;
+}
+
+#main p{
+    text-align: center;
+    padding-top: 20px;
+}
+#main a{
+    text-decoration: none;
+    color:#3b6ea5;
+}
+#main a:hover{
+    text-decoration: underline;
+}
+#main ol {
+    padding:0 0 0 26px;
+    height:35px;
+}
+#main ol li {
+    float:left;
+    padding:0 10px 0 0;
+    list-style: none;
+}
+#main ol li a {
+    padding:6px;
+    display:block;
+}
+#main ol li a:hover {
+    background:#eee;
+}
+#main ol li a.selected {
+    background:#3b6ea5;
+    color:#fff;
+}
+#main form textarea {
+    font-size:13px;
+    width:220px;
+    height:100px;
+    background:#fff;
+    border:1px solid #ccc;
+    margin:0 0 0 60px;
+}
+#main form select {
+    width:100px;
+    height:19px;
+    background:#fff;
+}
+#page{
+    text-align: center;
+    padding-top:20px;
+}
+
+#page a{
+    border:1px solid #666;
+    padding:2px 5px;
+    margin:0 2px;
+}
+#page a:hover{
+    border:1px solid #000;
+    text-decoration: none;
+    background: #000;
+    color:#fff;
+}
+#page span.disabled {
+    border:1px solid #ccc;
+    padding:2px 5px;
+    margin:0 2px;
+    color:#ccc;
+}
+
+#page span.me {
+    border:1px solid #000;
+    background: #000;
+    color:#fff;
+    padding:2px 5px;
+    margin:0 2px;
+}

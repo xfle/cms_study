@@ -1,0 +1,516 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,form,p,ul,dl,dd,dt,li{
+    margin:0;
+    padding:0;
+    font-size: 12px;
+    color:#666;
+}
+body{
+    width:960px;
+    margin:0 auto;
+    background: #fff;
+}
+ul{
+    list-style-type: none;
+}
+h2{
+    font-size: 12px;
+    height: 26px;
+    letter-spacing:1px;
+    color:#360;
+    line-height: 26px;
+    text-indent: 10px;
+    background: url(../images/lbg.png);
+}
+#top{
+    height: 26px;
+    text-align: right;
+    background: url(../images/top_bg.png);
+    margin-bottom:10px;
+}
+#top a{
+    line-height: 26px;
+    padding-right:10px;
+    color:red;
+}
+#header{
+    height:80px;
+    margin-bottom:10px;
+}
+#header h1{
+    font-size: 12px;
+    width:250px;
+    height:80px;
+    background: url("../images/logo.png")no-repeat;
+    float:left;
+}
+#header h1 a{
+    display:block;
+    height: 80px;
+    text-indent:-9999px;
+}
+#header div.adver{
+    display: block;
+    width:690px;
+    height: 80px;
+    border:1px solid #ccc;
+    float:right;;
+}
+#header div .adver img{
+    display:block;
+}
+#nav{
+    height:35px;
+    background:url("../images/nav_bg.png");
+    border:1px solid #ccc;
+    border-bottom: none;
+}
+#nav ul{
+    
+}
+#nav ul li{
+    display: inline;
+    line-height: 35px;
+    padding-left: 23px;
+}
+#nav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bolder;
+    color:#369;
+}
+#nav ul li a:hover {
+    color:#f60;
+}
+#search{
+    height:25px;
+    line-height: 25px;
+    margin-bottom:10px;
+    border:1px solid #ccc;
+    border-top: none;
+}
+#search form{
+    float:left;
+}
+#search form input.submit{
+    cursor: pointer;
+}
+#search form input.text{
+    width:200px;
+}
+#search strong{
+    float:left;
+    padding-left: 15px;
+}
+#search ul{
+    float:left;
+}
+
+#search ul li{
+    float:left;
+    padding-left: 5px;
+}
+#search ul li a{
+    color:green;
+    text-decoration: none;
+}
+#search ul li a:hover{
+    color: #ff6600;;
+}
+#user{
+    width:268px;
+    height:398px;
+    border:1px solid #ccc;
+    float:right;
+    margin-bottom:10px;
+}
+#user form{
+    position: relative;
+    padding-top:10px;
+    padding-left: 14px;
+}
+ #user form img{
+    position: absolute;
+     top: 72px;;
+     left:172px;
+ }
+#user form label{
+    padding-bottom: 5px;
+    display: block;
+    text-align:justify;
+}
+#user form input{
+    width:180px;
+    height: 20px;
+}
+#user form input.code{
+    width:100px;
+}
+
+#user form input.submit{
+    width:80px;
+    cursor: pointer;
+}
+
+#user form p a{
+    padding-left: 10px;
+    color:green;
+    text-decoration: none;
+}
+#user form p a:hover{
+    color:green;
+    text-decoration: underline;
+}
+
+#user form p{
+    text-align: center;
+}
+
+#user h3{
+    font-size: 12px!important;
+    padding:8px 0 12px 5px;
+}
+#user h3 span{
+    color:#ccc;
+}
+#user dl{
+    width:72px;
+    float:left;
+    padding-left: 12px;
+}
+#user dl dt img{
+    display: block;
+}
+#user dl dd{
+    padding: 5px;
+    text-align: center;
+}
+
+#news{
+    width:378px;
+    height:398px;
+    padding: 0 10px;
+    float:right;
+    border:1px solid #ccc;
+    margin-right: 10px;
+    margin-bottom:10px;
+}
+#news h3{
+     text-align: center;
+     color:#333;
+     padding:10px;
+     font-size: 16px;
+ }
+#news h3 a{
+    color:#333;
+    text-decoration: none;
+}
+#news h3 a:hover{
+    text-decoration: underline;
+}
+#news p{
+    line-height: 150%;
+}
+#news p a{
+    color:#333;
+    text-decoration: none;
+    padding:4px 0;
+}
+#news p a:hover{
+    text-decoration: underline;
+}
+
+#news p.link{
+    padding-top:5px;
+    color:green;
+    border-bottom:1px dashed #999;
+}
+#news p.link a{
+    color:green;
+    display: inline-block;
+}
+#news ul{
+    padding:5px 2px 0 2px;
+}
+#news ul li em{
+    float:right;
+    font-style: normal;
+    font-family: Tahomal;
+}
+#news ul li a{
+    color:#666;
+    text-decoration: none;
+}
+#news ul li a:hover{
+    color:#f60;
+    text-decoration: underline;
+}
+#news ul li{
+    height: 24px;
+    line-height: 24px;
+    background: url("../images/pointer.png")no-repeat left;
+    padding-left: 10px;
+}
+#pic{
+     width:270px;
+     height:195px;
+     float:left;
+     margin-bottom:10px;
+}
+#pic img{
+    display: block;
+    border: 1px solid #ccc;
+}
+#rec{
+    width:268px;
+    height:193px;
+    float:left;
+    margin-bottom:10px;
+    border:1px solid #ccc;
+}
+#rec ul{
+    padding:2px 10px 0 10px;
+}
+#rec ul li em{
+    float:right;
+    font-style: normal;
+    font-family: Tahomal;
+}
+#rec ul li a{
+    color:#666;
+    text-decoration: none;
+}
+#rec ul li a:hover{
+    color:#f60;
+    text-decoration: underline;
+}
+#rec ul li{
+    height: 23px;
+    line-height: 23px;
+    background: url("../images/pointer.png")no-repeat left;
+    padding-left: 10px;
+}
+#sidebar-right{
+    width:270px;
+    height:835px;
+    float:right;
+    float:right;
+    margin-bottom:10px;
+}
+#sidebar-right div.adver{
+    width:270px;
+    height:200px;
+    margin-bottom:10px;
+}
+#sidebar-right div.hot,#sidebar-right div.comm,#sidebar-right div.vote{
+    border:1px solid #ccc;
+    height: 200px;
+    margin-bottom:10px;
+}
+#sidebar-right div.vote{
+    margin-bottom:0px;
+}
+#sidebar-right div.adver img{
+    display:block;
+}
+#sidebar-right div ul{
+    padding:3px 10px 0 10px;
+}
+#sidebar-right div ul li em{
+    float:right;
+    font-style: normal;
+    font-family: Tahomal;
+}
+#sidebar-right div ul li a{
+    color:#666;
+    text-decoration: none;
+}
+#sidebar-right div ul li a:hover{
+    color:#f60;
+    text-decoration: underline;
+}
+#sidebar-right div ul li{
+    height: 24px;
+    line-height: 24px;
+    background: url("../images/pointer.png")no-repeat left;
+    padding-left: 10px;
+}
+
+#sidebar-right div.vote h3{
+    padding:10px;
+    text-align: center;
+    font-size:14px;
+    color:#369;
+    border-bottom:1px dashed #ccc;
+    width:80%;
+    margin:5px auto;
+}
+
+#sidebar-right div.vote form label{
+    display:block;
+    padding:2px 0 2px 20px;
+}
+#sidebar-right div.vote form p {
+    text-align: center;
+    padding:5px;
+}
+#sidebar-right div.vote form p input{
+    width:45px;
+    height:20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+#picnews{
+    width:678px;
+    height:198px;
+    float:left;
+    margin-bottom:10px;
+    border:1px solid #ccc;
+}
+#picnews dl{
+    width:156px;
+    float:left;
+    margin:10px 0 0 10px;
+}
+#picnews dl dt{
+    border:1px solid #999;
+    padding:2px;
+}
+#picnews dl dd{
+    text-align: center;
+    padding:5px;
+}
+#picnews dl dd a{
+    color:#666;
+    text-decoration: none;
+}
+#picnews dl dd a:hover {
+    text-decoration: underline;
+}
+#picnews dl dt img{
+    border: none;
+    display: block;
+}
+#newslist{
+    width:680px;
+    height:625px;
+    float:left;
+    margin-bottom:10px;
+}
+#newslist div.list{
+    width:49%;
+    height:306px;
+    border:1px solid #ccc;
+    float:left;
+}
+#newslist div.list h2 a{
+    float:right;
+    text-decoration: none;
+    color:green;
+    padding-right:10px;
+}
+#newslist div.list h2 a:hover{
+    text-decoration: underline;
+}
+#newslist div.right{
+    float:right;
+}
+#newslist div.bottom{
+    margin-bottom:10px;
+}
+
+#newslist div.list ul{
+    padding:8px 10px 0 10px;
+}
+#newslist div.list ul li em{
+    float:right;
+    font-style: normal;
+    font-family: Tahomal;
+}
+#newslist div.list ul li a{
+    color:#666;
+    text-decoration: none;
+}
+#newslist div.list ul li a:hover{
+    color:#f60;
+    text-decoration: underline;
+}
+#newslist div.list ul li{
+    height: 24px;
+    line-height: 24px;
+    background: url("../images/arrow.png")no-repeat left;
+    padding-left: 10px;
+}
+
+#link{
+    width:958px;
+    height: 108px;
+    float:left;
+    margin-bottom:10px;
+    border:1px solid #ccc;
+
+}
+#link h2 span {
+    float:right;
+    padding-right:10px;
+}
+#link h2 span a{
+    text-decoration: none;
+    color:#360;
+    padding:0 5px;
+    font-weight: normal;
+
+}
+#link h2 span a:hover{
+    text-decoration: underline;
+}
+#link ul{
+    height:30px;
+    line-height: 30px;
+    border-bottom:1px dashed #999;
+    margin:0 auto;
+    width:98%;
+}
+#link ul li{
+    display:inline;
+    padding:0 0 0 10px;
+}
+#link ul li a{
+    text-decoration: none;
+    color:#666;
+}
+#link ul li a:hover{
+    text-decoration: underline;
+}
+
+#link dl{
+    display:inline-block;
+    padding-top: 5px;
+}
+#link dl dd{
+    float:left;
+    padding-left:2px;
+    padding-top:5px;
+
+}
+
+#link dl dd img{
+    padding:0 8px;
+    display:block;
+    border:none;
+}
+#footer{
+    width:960px;
+    height: 46px;
+    float:left;
+}
+#footer p{
+    display:block;
+    text-align: center;
+    line-height: 150%;
+    font-family: Tahoma;
+    color:#333;
+}
+#footer p span{
+    color:#06f;
+}
