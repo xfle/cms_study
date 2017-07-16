@@ -26,4 +26,5 @@ unset($_query['go']);
 print_r($_query);
 echo http_build_query($_query);
 echo 'good!!!';
+echo '我很满意';
 ?>
