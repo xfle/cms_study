@@ -52,7 +52,9 @@ class Page{
     }
 
     private function last(){
-        return '...<a href="'.$this->_url.'&page='.$this->_pageNum.'">'.$this->_pageNum.'</a>';
+        if(($this->_pageNum-$this->_page)>$this->_bothNum) {
+            return '...<a href="' . $this->_url . '&page=' . $this->_pageNum . '">' . $this->_pageNum . '</a>';
+        }
     }
     public function setUrl(){
         //获取页面的地址（除域名以外的地址）
@@ -95,12 +97,14 @@ class Page{
             $_pagelist='';
              for($i=$this->_bothNum;$i>=1;$i--) {
                  $_page=$this->_page-$i;
+                 //如果page取得的值小于1,就退出当前循环。以免出现负数页码
+                 if($_page<1) continue;
                  $_pagelist.='<a href="'.$this->_url.'&page='.$_page.'">'.$_page.'</a>';
              }
             $_pagelist.='<span class="me">'.$this->_page.'</span>';
             for($i=1;$i<=$this->_bothNum;$i++){
                 $_page=$this->_page+$i;
-                if($_page>$this->_pageNum) break;
+                if($_page>$this->_pageNum) continue;
                 $_pagelist.='<a href="'.$this->_url.'&page='.$_page.'">'.$_page.'</a>';
 
             }
@@ -109,9 +113,11 @@ class Page{
 
     public function showpage(){
         $_page=$this->prv();
-        $_page.=$this->first();
+        if($this->_page>$this->_bothNum+1){
+            $_page.=$this->first();
+        }
         $_page.=$this->pageList();
-        $_page.=$this->last();
+            $_page.=$this->last();
         $_page.=$this->next();
         return $_page;
     }
